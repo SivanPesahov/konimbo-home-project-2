@@ -12,6 +12,8 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+
+  // -- for deployment
   build: {
     outDir: "../Backend/public",
     emptyOutDir: true,

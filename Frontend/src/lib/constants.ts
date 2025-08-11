@@ -1,6 +1,6 @@
 import type { FormData } from "../components/formComponent";
 
-type FieldDef = {
+export type FieldDef = {
   name: keyof FormData;
   label: string;
   input: "text" | "email" | "textarea";

@@ -7,11 +7,9 @@ function Header() {
             Konimbo Home Project
           </h1>
           <p className="text-sm text-indigo-200 mt-1">
-            Landing Page with Airtable Integration
+            Landing Page with Airtable api Integration
           </p>
         </div>
-        {/* Placeholder for potential nav buttons */}
-        <div></div>
       </div>
     </header>
   );

@@ -48,7 +48,7 @@ The Konimbo Home Project is a landing page featuring a form that collects user i
    cd ../frontend
    npm start
    ```
-6. Open your browser and navigate to `http://localhost:5173` to view the project.
+6. Open your browser and navigate to http://localhost:5173 to view the project.
 
 ## Usage
 
@@ -74,4 +74,5 @@ Fill out the form on the landing page by entering your Full Name, Email, and a M
 ## License
 
 This project is licensed under the MIT License.
+
 # konimbo-home-project-2

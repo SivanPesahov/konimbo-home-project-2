@@ -1,12 +1,4 @@
-import type { FormData } from "../components/formComponent";
-
-export type FieldDef = {
-  name: keyof FormData;
-  label: string;
-  input: "text" | "email" | "textarea";
-  placeholder?: string;
-  rows?: number;
-};
+import type { FieldDef } from "../types/formTypes";
 
 export const formFields: readonly FieldDef[] = [
   {

@@ -1,8 +1,7 @@
 import type { ControllerRenderProps } from "react-hook-form";
-import type { FieldDef } from "../lib/constants";
 import { FormControl, FormItem, FormLabel, FormMessage } from "./ui/form";
 import { Input } from "./ui/input";
-import type { ContactFormValues } from "../types/formTypes";
+import type { ContactFormValues, FieldDef } from "../types/formTypes";
 
 type FormItemType = {
   f: FieldDef;

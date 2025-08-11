@@ -6,7 +6,7 @@ const app: Application = express();
 // Middleware
 
 // -- for deployment
-app.use(express.static("public"));
+// app.use(express.static("public"));
 
 app.use(express.json());
 app.use(cors());

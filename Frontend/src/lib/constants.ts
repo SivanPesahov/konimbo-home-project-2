@@ -1,6 +1,6 @@
 import type { FieldDef } from "../types/formTypes";
 
-export const formFields: readonly FieldDef[] = [
+export const FORMFIELDS: readonly FieldDef[] = [
   {
     name: "fullName",
     label: "Full Name",

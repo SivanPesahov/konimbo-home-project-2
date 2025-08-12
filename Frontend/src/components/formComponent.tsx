@@ -13,7 +13,7 @@ import {
   CardTitle,
 } from "../components/ui/card";
 import api from "../services/api.service";
-import { formFields } from "../lib/constants";
+import { FORMFIELDS } from "../lib/constants";
 import FormItemComponent from "./formItemComponent";
 
 const formSchema = z.object({
@@ -43,7 +43,7 @@ function ContactPage() {
       await api.post("/table/createRecord", values);
       form.reset();
       setErrorMessage("");
-      setSuccessMessage("✅ Message sent successfully!");
+      setSuccessMessage("✅ User created successfully!");
       setTimeout(() => setSuccessMessage(""), 3000);
     } catch (error: any) {
       setSuccessMessage("");
@@ -81,7 +81,7 @@ function ContactPage() {
                 </div>
               )}
 
-              {formFields.map((f) => (
+              {FORMFIELDS.map((f) => (
                 <FormField
                   key={f.name}
                   control={form.control}
@@ -107,7 +107,10 @@ function ContactPage() {
 
         <div className="px-6 pb-6">
           <p className="text-[11px] text-gray-500">
-            We care about your data. Read our privacy policy.
+            We care about your data. Read our{" "}
+            <span className="underline cursor-pointer font-bold">
+              privacy policy.
+            </span>
           </p>
         </div>
       </Card>
